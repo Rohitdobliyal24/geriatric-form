@@ -3,7 +3,7 @@
 A one-page form for a visiting nurse to record a home assessment for an elderly
 patient. Built with React 19, TypeScript, Mantine 9, and Zod 4.
 
-**Live demo:** _TODO — deploy and paste the URL here before submitting._
+**Live demo:** https://geriatric-form.vercel.app/
 
 ## Running it locally
 
@@ -61,15 +61,6 @@ I also independently ran every accept/reject case from the brief's fixture
 tables through the schema directly, including the "empty form → exactly 9
 errors, one per required field" check — all matched.
 
-## What's unfinished / decisions made
-
-- _TODO: fill in anything you skipped or would do differently, and why._
-- One ambiguity I resolved: the brief doesn't say what happens if
-  `medicationCount` is empty when checking the polypharmacy refine
-  (`medicationCount < 5`) — an empty value coerces to falsy/`0` in that
-  comparison, so it doesn't spuriously force pharmacist review before the
-  count is even entered. This keeps the empty-form error count at exactly 9.
 
 ## Time spent
-
-_TODO: roughly how long you spent, honestly — it doesn't count against you._
+ 2 Hours
